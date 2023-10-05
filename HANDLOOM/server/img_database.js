@@ -1,11 +1,12 @@
 const util = require('util');
 const mysql = require('mysql');
 const pool = mysql.createPool({
-  connectionLimit: 10,
-	host     : 'localhost',
-    user     : 'root',   
-    password : 'sabariz31',  
-    database : 'sample'  
+  // connectionLimit: 10,
+  host: 'localhost',
+  port: 5432,
+  user: 'postgres',
+  database: 'ss',
+  password: 'sabariz31',
 });
 
 
